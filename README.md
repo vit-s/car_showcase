@@ -1,6 +1,6 @@
 # Next.js + TypeScript + Headlessui+ Tailwindcss + Rapidapi 
 
-- nextjs.org
+- https://nextjs.org
 - typescriptlang.org
 - tailwindcss.com
 - rapidapi.com
