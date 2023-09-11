@@ -9,8 +9,8 @@ import { updateSearchParams }  from "../utils/index";
 const CustomFilter = ({title, options}: CustomFilterProps) => {
   const router                  = useRouter()
   const [selected, setSelected] = useState(options[0]);
-  const handleUpdateParams      = (e: {title: string, value: string}) => {
-    const newPathName  = updateSearchParams(title, e.value.toLowerCase())
+  const handleUpdateParams      = (e: { title: string, value: string }) => {
+    const newPathName = updateSearchParams(title, e.value.toLowerCase())
     router.push(newPathName)
   }
 
@@ -18,7 +18,7 @@ const CustomFilter = ({title, options}: CustomFilterProps) => {
     <div className={`w-fit`}>
       <Listbox
         value={selected}
-        onChange={e => {
+        onChange={(e) => {
           setSelected(e)
           handleUpdateParams(e)
         }}
